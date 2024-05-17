@@ -1,0 +1,16 @@
+{
+  "name": "lista_de_contactos_front",
+  "version": "1.0.0",
+  "description": "Lista de contactos. Ejercicio de CRUD con React, Node.js (Express) y MongoDB\r Este ejercicio consiste en crear una aplicación web de gestión de contactos utilizando React para el frontend, Node.js con Express para el backend, y MongoDB como base de datos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-router-dom": "^6.23.1"
+  }
+}
