@@ -4,13 +4,38 @@
   "description": "Lista de contactos. Ejercicio de CRUD con React, Node.js (Express) y MongoDB\r Este ejercicio consiste en crear una aplicación web de gestión de contactos utilizando React para el frontend, Node.js con Express para el backend, y MongoDB como base de datos.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "dev": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^18.3.1",
-    "react-router-dom": "^6.23.1"
+    "react-router-dom": "^6.23.1",
+    "redux": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-class-properties": "^7.24.1",
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.24.1",
+    "@babel/plugin-transform-numeric-separator": "^7.24.1",
+    "@babel/plugin-transform-optional-chaining": "^7.24.5",
+    "@babel/plugin-transform-private-methods": "^7.24.1",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
