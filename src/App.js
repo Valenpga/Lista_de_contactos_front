@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import ContactForm from './components/ContactForm';
 import ContactList from './components/ContactList';
 import ContactDetails from './components/ContactDetails';
-
 const App = () => {
   const [contacts, setContacts] = useState([]);
   const [selectedContact, setSelectedContact] = useState(null);
