@@ -1,8 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import {fetchMessage} from './message/messageSlice';
 import ContactForm from './components/ContactForm';
 import ContactList from './components/ContactList';
 import ContactDetails from './components/ContactDetails';
 const App = () => {
+  const dispatch = useDispatch();
+  const message = useSelector((state) => state.message.message);
+
+  useEffect(() => {
+    dispatch(fetchMessage())
+  }, [dispatch]);
+
   const [contacts, setContacts] = useState([]);
   const [selectedContact, setSelectedContact] = useState(null);
 
@@ -23,7 +32,10 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className='App'>
+      <header className='App-header'>
+        <p>{message ? message : 'Cargando...'}</p>
+      </header>
       <ContactForm onSubmit={addContact} />
       <ContactList contacts={contacts} onSelectContact={selectContact} onDeleteContact={deleteContact} />
       {selectedContact && (
